@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+}
+body{
+    background: #eeaeca;
+}
+.container{
+    width: 100%;
+}
+.quote_box{
+    width: 700px;
+    background: azure;
+    /* margin: 20px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 60px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(96, 98, 210, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+    
+}
+.quote_box h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+    text-decoration: underline;
+}
+.quote_box h1 ::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: #eeaeca;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.quote_box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.quote_box blockquote::before , .quote_box blockquote::after{
+    content: '"';
+}
+.quote_box span{
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    float: right;
+}
+.quote_box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #eeaeca;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.quote_box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.quote_box button{
+   background: #eeaeca;
+   color: aliceblue;
+   outline: none;
+   display: flex;
+   border-radius: 25px;
+   align-items: center;
+   justify-content: center;
+   margin: 5px;
+   width: 140px;
+   height: 50px;
+   border: 1px solid rosybrown;
+   font-size: 20px;
+}
+.quote_box button:hover{
+    cursor: pointer;
+    background: rosybrown;
+
+}
